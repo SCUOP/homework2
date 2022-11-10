@@ -5,4 +5,14 @@
 //不成功返回false
 bool Calculator::OperateNum(double num)
 {
+    std::cout << num << std::endl;
+    try
+    {
+        OPND.push(num);
+        return true;
+    }
+    catch (...)
+    {
+        return false;
+    }
 }
