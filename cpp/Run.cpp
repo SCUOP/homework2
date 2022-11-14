@@ -29,7 +29,7 @@ void Calculator::Run()
             }
             else
             {
-                if ((expression[i] == '-' || expression[i] == '+') && (i == 0 || std::string("+-/*(").find(expression[i - 1]) != std::string::npos))
+                if ((expression[i] == '-' || expression[i] == '+') && (i == 0 || std::string("(").find(expression[i - 1]) != std::string::npos))
                 {
                     flag = OperateNum(0);
                 }
